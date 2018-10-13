@@ -2,18 +2,21 @@
 
 Whenever you run into problems with starting app on simulator:
 
-# Upgrade react native CLI
+## Upgrade react native CLI
 `react-native upgrade`
 
 
-# Clean cache
+## Clean cache
 `rm -rf $TMPDIR/react-*; rm -rf $TMPDIR/haste-*; rm -rf $TMPDIR/metro-*; watchman watch-del-all`
 
-# Start Metro Bundler directly
+## Start Metro Bundler directly
 `react-native start`
 
-# Now run in another tab
+## Now run in another tab
 `react-native run-android` or `react-native run-ios`
 
-# To debug via web-browser add 'debugger' to the line you want to stop
+## To debug via web-browser add 'debugger' to the line you want to stop
 `debugger;`
+
+# Libraries for the project
+npm install --save axios
